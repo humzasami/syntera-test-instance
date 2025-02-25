@@ -12,6 +12,7 @@
 	--chat--color-dark: #101330;
 	--chat--color-disabled: #777980;
 	--chat--color-typing: #404040;
+	--chat--toggle--background: url('https://cdn.jsdelivr.net/gh/humzasami/syntera-test-instance@main/Untitled%20design%20(7).png') no-repeat center center;
 
 	--chat--spacing: 1rem;
 	--chat--border-radius: 0.25rem;
@@ -47,7 +48,7 @@
 	--chat--message--user--border: none;
 	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
 
-	--chat--toggle--background: var(--chat--color-primary);
+	--chat--toggle--background: var(--chat--toggle--background);
 	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
 	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
 	--chat--toggle--color: var(--chat--color-white);
