@@ -1,8 +1,8 @@
 :root {
-	--chat--color-primary: #2C0CE5;
+	--chat--color-primary: #e74266;
 	--chat--color-primary-shade-50: #db4061;
 	--chat--color-primary-shade-100: #cf3c5c;
-	--chat--color-secondary: #CE30B4;
+	--chat--color-secondary: #20b69e;
 	--chat--color-secondary-shade-50: #1ca08a;
 	--chat--color-white: #ffffff;
 	--chat--color-light: #f2f4f8;
@@ -22,11 +22,14 @@
 
 	--chat--header-height: auto;
 	--chat--header--padding: var(--chat--spacing);
-	--chat--header--background: #280BD7;
+	--chat--header--background: var(--chat--color-dark);
 	--chat--header--color: var(--chat--color-light);
 	--chat--header--border-top: none;
 	--chat--header--border-bottom: none;
+	--chat--header--border-bottom: none;
+	--chat--header--border-bottom: none;
 	--chat--heading--font-size: 2em;
+	--chat--header--color: var(--chat--color-light);
 	--chat--subtitle--font-size: inherit;
 	--chat--subtitle--line-height: 1.8;
 
@@ -39,42 +42,14 @@
 	--chat--message--bot--background: var(--chat--color-white);
 	--chat--message--bot--color: var(--chat--color-dark);
 	--chat--message--bot--border: none;
-	--chat--message--user--background: #F6D6F1;
-	--chat--message--user--color: #000000;
+	--chat--message--user--background: var(--chat--color-secondary);
+	--chat--message--user--color: var(--chat--color-white);
 	--chat--message--user--border: none;
 	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
 
-	/* Chat Toggle Button */
-	--chat--toggle--background: url('https://cdn.jsdelivr.net/gh/humzasami/syntera-test-instance@main/Untitled%20design%20(7).png') no-repeat center center;
-	--chat--toggle--hover--background: var(--chat--toggle--background);
-	--chat--toggle--active--background: var(--chat--toggle--background);
+	--chat--toggle--background: var(--chat--color-primary);
+	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
 	--chat--toggle--color: var(--chat--color-white);
 	--chat--toggle--size: 64px;
-}
-
-.chat-window-wrapper .chat-window-toggle {
-    flex: 0 0 auto;
-    background: var(--chat--toggle--background) !important;
-    background-size: contain !important;
-    width: var(--chat--toggle--size) !important;
-    height: var(--chat--toggle--size) !important;
-    border-radius: 50% !important;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    transition: transform var(--chat--transition-duration) ease, background var(--chat--transition-duration) ease;
-    background-color: transparent !important;
-}
-
-/* Hover effect */
-.chat-window-wrapper .chat-window-toggle:hover {
-    background: var(--chat--toggle--hover--background) !important;
-    filter: brightness(1.1);
-}
-
-/* Active (clicked) state */
-.chat-window-wrapper .chat-window-toggle:active {
-    background: var(--chat--toggle--active--background) !important;
-    filter: brightness(0.9);
 }
