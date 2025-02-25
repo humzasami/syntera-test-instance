@@ -48,7 +48,7 @@
 	--chat--message--user--border: none;
 	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
 
-	--chat--toggle--background: var(--chat--toggle--background);
+	--chat--toggle--background: var(--chat--toggle--background) !important
 	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
 	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
 	--chat--toggle--color: var(--chat--color-white);
