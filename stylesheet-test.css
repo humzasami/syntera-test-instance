@@ -37,6 +37,33 @@
 
 	--chat--textarea--height: 50px;
 
+	.chat-window-wrapper .chat-window-toggle {
+    background: var(--chat--toggle--background) !important;
+    background-size: cover !important;  /* Ensures full coverage */
+    background-color: #ffffff !important; /* Fallback background color */
+    width: var(--chat--toggle--size) !important;
+    height: var(--chat--toggle--size) !important;
+    border-radius: 50% !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    transition: transform var(--chat--transition-duration) ease, background var(--chat--transition-duration) ease;
+}
+
+/* ✅ Hover Effect */
+.chat-window-wrapper .chat-window-toggle:hover {
+    background: var(--chat--toggle--hover--background) !important;
+    filter: brightness(1.1);
+}
+
+/* ✅ Active (Clicked) State */
+.chat-window-wrapper .chat-window-toggle:active {
+    background: var(--chat--toggle--active--background) !important;
+    filter: brightness(0.9);
+}
+
+
 	--chat--message--font-size: 1rem;
 	--chat--message--padding: var(--chat--spacing);
 	--chat--message--border-radius: var(--chat--border-radius);
